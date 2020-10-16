@@ -20,7 +20,7 @@ class NewsItem extends StatelessWidget {
           // mainAxisAlignment: MainAxisAlignment.end,
           children: [
             Container(
-              height: 70,
+              height: 60,
               child: Image.asset(
                 this.newsItem.imageUrl,
                 scale: 4,
@@ -52,10 +52,11 @@ class NewsItem extends StatelessWidget {
                   ),
                 ),
                 Container(
+                  padding: EdgeInsets.only(top: 3),
                   child: Text(
                     'Description: ${this.newsItem.description}',
                     style: TextStyle(
-                        fontSize: 13,
+                        fontSize: 12,
                         color: Colors.white,
                         fontFamily: 'Commissioner'),
                   ),
